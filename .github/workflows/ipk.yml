@@ -299,7 +299,7 @@ jobs:
         CONFIG_PACKAGE_luci-app-usb-printer=m
         CONFIG_PACKAGE_luci-app-vlmcsd=m
         CONFIG_PACKAGE_luci-app-zerotier=m
-        CONFIG_PACKAGE_luci-app-homeproxy=m
+        CONFIG_PACKAGE_luci-app-homeproxy-clashapi=m
         CONFIG_PACKAGE_luci-app-nikki=m
         CONFIG_PACKAGE_luci-app-openclash=m
         CONFIG_PACKAGE_luci-app-firewall=m
