@@ -312,6 +312,7 @@ jobs:
         CONFIG_PACKAGE_luci-lib-xterm=y
         CONFIG_PACKAGE_luci-app-verysync=m
         CONFIG_PACKAGE_luci-app-syncthing=m
+        CONFIG_PACKAGE_luci-app-momo=m
         CONFIG_PACKAGE_kmod-l2tp=m
         CONFIG_PACKAGE_kmod-pppol2tp=m
         CONFIG_PACKAGE_ppp-mod-pppol2tp=m
