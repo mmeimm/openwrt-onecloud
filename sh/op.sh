@@ -122,6 +122,10 @@ git clone https://github.com/sbwml/package_libs_ngtcp2 package/libs/ngtcp2
 rm -rf feeds/packages/net/curl
 git clone https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/curl
 
+#golang 24.x
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
+
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 
