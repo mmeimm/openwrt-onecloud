@@ -149,7 +149,11 @@ jobs:
         mkdir -p openwrt/package/network/utils/nftables/patches
         [ -e patch ] && cp -rf patch/firewall4/nftables/*.patch openwrt/package/network/utils/nftables/patches
         [ -e patch ] && cp -rf patch/firewall4/luci-24.10/*.patch openwrt/feeds/luci 
-        [ -e patch ] && cp -rf patch/luci/*.patch openwrt/feeds/luci 
+        [ -e patch ] && cp -rf patch/luci/*.patch openwrt/feeds/luci
+        
+        mkdir -p openwrt/target/linux/meson
+        [ -e patch ] && cp -rf patch/meson8b/meson8b.patch openwrt/target/linux/meson/meson8b.patch
+        
         [ -e patch ] && cp -rf patch/openssl/quic/*.patch openwrt/package/libs/openssl/patches
         [ -e patch ] && cp -rf patch/iproute2/*.patch openwrt/package/network/utils/iproute2/patches
         mkdir -p openwrt/package/network/services/odhcpd/patches
@@ -165,6 +169,7 @@ jobs:
         [ -e patch ] && cp -rf patch/nginx/${REPO_BRANCH}-uci.conf.template openwrt/feeds/packages/net/nginx-util/files
         [ -e patch ] && cp -rf patch/kernel-6.12/bbr3/*.patch openwrt/target/linux/generic/backport-6.12
         [ -e patch ] && cp -rf patch/kernel-6.12/btf/*.patch openwrt/target/linux/generic/hack-6.12
+        [ -e patch ] && cp -rf patch/kernel-6.12/btf/*.patch
 
         
     - name: 添加玩客云
